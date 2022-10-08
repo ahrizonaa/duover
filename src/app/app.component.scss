@@ -117,3 +117,10 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+
+.champ-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  height: 600px;
+}

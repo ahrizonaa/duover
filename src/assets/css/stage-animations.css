@@ -1,0 +1,107 @@
+/** STAGE 3 ******************************************************************************/
+.stage-3 {
+  -webkit-animation: stage-3-anim 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: stage-3-anim 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes stage-3-anim {
+  0% {
+    -webkit-transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px)
+      skew(-12deg, -15deg);
+    transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px)
+      skew(-12deg, -15deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, -150%) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes stage-3-anim {
+  0% {
+    -webkit-transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px)
+      skew(-12deg, -15deg);
+    transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px)
+      skew(-12deg, -15deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, -150%) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+
+/** STAGE 2 ******************************************************************************/
+.stage-2 {
+  -webkit-animation: stage-2-anim 0.65s 0.2s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: stage-2-anim 0.65s 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes stage-2-anim {
+  0% {
+    -webkit-transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px)
+      skew(-12deg, -15deg);
+    transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px)
+      skew(-12deg, -15deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, -80%) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes stage-2-anim {
+  0% {
+    -webkit-transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px)
+      skew(-12deg, -15deg);
+    transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px)
+      skew(-12deg, -15deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, -80%) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+
+/** STAGE 1 ******************************************************************************/
+.stage-1 {
+  -webkit-animation: stage-1-anim 0.65s 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: stage-1-anim 0.65s 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes stage-1-anim {
+  0% {
+    -webkit-transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px)
+      skew(-12deg, -15deg);
+    transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px)
+      skew(-12deg, -15deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes stage-1-anim {
+  0% {
+    -webkit-transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px)
+      skew(-12deg, -15deg);
+    transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px)
+      skew(-12deg, -15deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
