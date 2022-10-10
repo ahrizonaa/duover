@@ -20,6 +20,7 @@
   box-shadow: 0px 3px 5px #000000;
   padding: 15px;
   transition: transform 1s ease-in-out;
+  background-color: var(--ion-color-primary-rgb);
 }
 .stage-1 {
   width: 50%;
@@ -37,4 +38,5 @@
 .stage-3 {
   width: 90%;
   transform: translateY(-150%);
+  z-index: -2;
 }
