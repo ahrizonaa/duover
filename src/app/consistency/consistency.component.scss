@@ -183,3 +183,43 @@
   min-width: 31px;
   text-align: center;
 }
+
+.champ-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: fit-content;
+  padding: 30px;
+}
+
+.champion-box {
+  min-width: 245px;
+  height: 360px;
+  background-color: #000000;
+  border-radius: 15px;
+  margin-right: 10px;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+}
+
+.swiper-champion-box {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  // padding: 20px;
+  padding-left: 20px;
+  border-radius: 30px;
+  border: 3px solid #000;
+  cursor: pointer;
+}
+.swiper-champion-box:hover {
+  border: 2px solid #59a777 !important;
+}
+.champ-active {
+  border: 2px solid #59a777 !important;
+}

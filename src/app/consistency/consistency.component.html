@@ -1,12 +1,29 @@
 <div class="home-content">
-  <div style="width: 100%; text-align: left">
+  <!-- <div style="width: 100%; text-align: left">
     <h1>Consistency + Mastery</h1>
-  </div>
-  <div class="win-streak-content">
+  </div> -->
 
-    <!-- <div class="header">
-      <h1></h1>
+  <div class="champ-list">
+    <!-- <div class="champion-box" *ngFor="let champion of champions" [style.backgroundImage]="'url(' + champion.img + ')'">
+      {{champion.name}}
     </div> -->
+    <swiper style="width:100%" [slidesPerView]="3" [spaceBetween]="30" [freeMode]="true" [pagination]="{
+          clickable: true
+        }" class="mySwiper">
+      <ng-template #slide class="champion-box" *ngFor="let champion of champions" swiperSlide>
+        <div (click)="activate(champion)" class="swiper-champion-box"
+          [style.backgroundImage]="'url(' + champion.img + ')'" [ngClass]="{ 'champ-active': champion.active }"
+          [style.backgroundPositionX]="champion.bgImageShift">
+          <h2>{{ champion.name }}</h2>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+  <div *ngIf="this.activeChampion" class="win-streak-content">
+
+    <div class="header">
+      <h5>3 Game Streak</h5>
+    </div>
 
     <div class="game-tiles-content">
       <div class="game game-1">

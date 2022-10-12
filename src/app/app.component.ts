@@ -10,7 +10,7 @@ export class AppComponent {
     { title: 'Home', url: '/home', icon: 'home', id: 1 },
     // { title: 'Play', url: '/play', icon: 'game-controller', id: 2 },
     {
-      title: 'Consistency',
+      title: 'Training Grounds ',
       url: '/consistency',
       icon: 'school',
       id: 3,
