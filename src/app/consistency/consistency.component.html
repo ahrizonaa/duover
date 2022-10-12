@@ -58,36 +58,73 @@
       </div>
     </div>
     <div class="targets">
+      <h1>{{ this.activeChampion.name + "'s targets" }} </h1>
+      <br>
       <div class="col-1">
-        <div class="progress-container">
-          <div class="main-bar">
-            <div class="progress-bar-fill">
-              <div class="bar-desc">CS Per Min</div>
+        <ion-card>
+          <img [alt]="activeChampion.passive.name" src="../../assets/images/champions/aatrox/aatrox-passive.jpg" />
+          <ion-card-header>
+            <ion-card-title>{{ activeChampion.passive.name }}</ion-card-title>
+            <ion-card-subtitle>{{ activeChampion.passive.type }}</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content style="font-size: 7px">
+            <ion-text>{{ activeChampion.passive.description }}</ion-text>
+            <div style="height: 20px"></div>
+            <b>How to achieve: as a result of each fight, ensure: (1) you did not die while passive was off cooldown,
+              and (2) passive sat off cooldown for only 10% of the available duration of every fight you're engaged
+              in</b>
+            <div style="height: 20px"></div>
+
+            <div class="progress-container">
+              <div class="main-bar">
+                <div class="progress-bar-fill">
+
+                </div>
+                <div class="bar-desc">Passive Proc Uptime</div>
+
+              </div>
+              <div class="tick">
+                <div class="labels">
+                  <div class="tick-label-top">Target</div>
+                  <div class="tick-label-bottom">90%</div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="tick">
-            <div class="labels">
-              <div class="tick-label-top">Target</div>
-              <div class="tick-label-bottom">7 cs/min</div>
-            </div>
-          </div>
-        </div>
+            <div style="height: 20px"></div>
+          </ion-card-content>
+        </ion-card>
+
         <div class="target-spacer"></div>
-        <div class="progress-container">
-          <div class="main-bar">
-            <div class="progress-bar-fill">
 
-            </div>
-            <div class="bar-desc">Passive Proc Uptime</div>
+        <ion-card>
+          <img alt="Gold" src="../../assets/images/gold-coins.png" />
+          <ion-card-header>
+            <ion-card-title>CS Per Minute</ion-card-title>
+            <ion-card-subtitle>General - Income</ion-card-subtitle>
+          </ion-card-header>
 
-          </div>
-          <div class="tick">
-            <div class="labels">
-              <div class="tick-label-top">Target</div>
-              <div class="tick-label-bottom">90%</div>
+          <ion-card-content style="font-size: 7px">
+            <div style="height: 20px"></div>
+            <b>How to achieve: acquire at minimum, 70% of the gold from minions available in your lane</b>
+            <div style="height: 20px"></div>
+            <div class="progress-container">
+              <div class="main-bar">
+                <div class="progress-bar-fill">
+                  <div class="bar-desc">CS Per Min</div>
+                </div>
+              </div>
+              <div class="tick">
+                <div class="labels">
+                  <div class="tick-label-top">Target</div>
+                  <div class="tick-label-bottom">7 cs/min</div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+            <div style="height: 20px"></div>
+          </ion-card-content>
+        </ion-card>
+
       </div>
     </div>
   </div>

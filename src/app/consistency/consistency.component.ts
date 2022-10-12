@@ -16,7 +16,13 @@ export class ConsistencyComponent {
   champions: Champion[] = [
     {
       name: 'Aatrox',
-      img: '../../assets/images/champions/bloodmoon-aatrox-prestige-splash.jpg',
+      img: '../../assets/images/champions/aatrox/aatrox-splashart.jpg',
+      passive: {
+        name: 'Deathbringer Stance',
+        type: 'Passive',
+        description:
+          "Periodically, Aatrox empowers his next basic attack to gain Range icon.png 50 bonus range and deal bonus physical damage equal to 5% − 12% (based on level) of the target's maximum health, capped at 100 against Monster icon.png monsters.  Aatrox Heal power icon.png heals for 100% of the post-mitigation damage dealt, reduced to 25% against Minion icon.png minions.",
+      },
     },
     {
       name: 'Ahri',
@@ -52,4 +58,5 @@ export interface Champion {
   img: string;
   active?: boolean;
   bgImageShift?: string;
+  passive?: any;
 }
